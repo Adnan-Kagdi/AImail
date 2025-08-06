@@ -1,0 +1,110 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.AI-h {
+  color: #585feb;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.gnr-button {
+  background-color: #585feb16 !important;
+  border: 1px solid #585feb !important;
+  border: none;
+  padding: 0.6em 1.2em;
+  margin-top: 1rem;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.25s;
+}
+
+.gnr-button:hover {
+  background-color: #585feb !important;
+  color: white;
+  transform: scale(1.05);
+
+  .loading {
+    color: rgb(255, 252, 252) !important;
+  }
+}
+
+.email-cont {
+  border: 2px solid #585feb;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #585feb26 !important;
+  border-radius: 8px;
+}
+
+.AI-input2 {
+  border: 2px solid black !important;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.AI-input2:hover {
+  border: 2px solid rgba(30, 29, 29, 0.767) !important;
+}
+
+.sbm-button {
+  background-color: rgba(120, 203, 120, 0.112) !important;
+  border: 1px solid rgba(60, 59, 59, 0.687) !important;
+  color: black !important;
+  margin-top: 1.5rem !important;
+  font-size: 1em;
+  transition: background-color 0.25s, transform 0.25s;
+}
+
+.sbm-button:hover {
+  background-color: rgba(120, 203, 120, 0.822) !important;
+  border: 1px solid rgb(54, 58, 54) !important;
+  color: black !important;
+  transform: scale(1.05);
+}
+
+.loading {
+  color: rgb(0, 0, 0) !important;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
