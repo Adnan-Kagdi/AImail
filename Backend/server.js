@@ -8,7 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://aimail-37o1.onrender.com/",
+    origin: "https://aimail-37o1.onrender.com",
   })
 );
 
