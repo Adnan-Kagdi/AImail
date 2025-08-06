@@ -5,7 +5,13 @@ const nodemailer = require("nodemailer");
 const axios = require("axios");
 
 const app = express();
-app.use(cors());
+
+app.use(
+  cors({
+    origin: "https://aimail-37o1.onrender.com/",
+  })
+);
+
 app.use(express.json());
 
 app.post("/generate-email", async (req, res) => {
