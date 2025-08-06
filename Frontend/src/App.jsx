@@ -23,7 +23,7 @@ export default function App() {
     if (!prompt) return alert("Please enter a prompt.");
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/generate-email", {
+      const res = await axios.post("https://aimail-p72o.onrender.com/generate-email", {
         prompt,
       });
       setEmailContent(res.data.message);
@@ -38,7 +38,7 @@ export default function App() {
       return alert("Recipient and message required.");
 
     try {
-      await axios.post("http://localhost:5000/send-email", {
+      await axios.post("https://aimail-p72o.onrender.com/send-email", {
         recipients,
         subject: subject || "AI Generated Email",
         message: emailContent,
